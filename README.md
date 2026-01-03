@@ -60,6 +60,12 @@ If using a [Docker Context](https://docs.docker.com/engine/manage-resources/cont
 docker -c domain.com compose down --remove-orphans --volumes --timeout 0
 ```
 
+### Expose Ashina
+
+If you want to expose publicly this app on the internet, it is highly recommended to use a Reverse Proxy with a domain name and a secure SSL certificate.
+
+We recommend you use [Nginx](https://nginx.org/) as the reverse proxy and [Let's Encrypt](https://letsencrypt.org/) for generating secure and robust SSL certificates. You can use [Duck DNS](https://www.duckdns.org/) if you don't care about the style of your domain name and don't want to pay for a custom one.
+
 ## License
 
 See [`LICENSE`](./LICENSE).
