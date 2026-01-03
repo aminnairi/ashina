@@ -9,57 +9,42 @@ Clean and simple dashboard for your self-hosted apps
 - Docker
 - Docker Compose
 
-### Setup
+### Create the working folder
 
 ```bash
 mkdir ashina
+```
+
+### Change the current working folder
+
+```bash
 cd ashina
+```
+
+### Create the compose file
+
+Copy the content of the [`docker/compose.yml`](./docker/compose.yml) file to your own, or copy the command below to fetch it from the internet.
+
+```bash
 curl -O https://raw.githubusercontent.com/aminnairi/ashina/refs/heads/development/docker/compose.yml
 ```
 
-### Start
+### Start the dashboard
 
 ```bash
 docker compose up -d
 ```
 
-## Development
-
-### Requirements
-
-- Git
-- Docker
-- Docker Compose
-
-### Setup
+### Stop the dashboard
 
 ```bash
-git clone https://github.com/aminnairi/ashina
-cd ashina
-docker compose up --build -d
-docker compose exec ashina npm i
+docker compose down --remove-orphans --volumes --timeout 0
 ```
 
-### Server
+## License
 
-```bash
-docker compose exec ashina npm -w apps/server run dev
-```
+See [`LICENSE`](./LICENSE).
 
-### Client
+## Contributing
 
-```bash
-docker compose exec ashina npm -w apps/client run dev
-```
-
-## Build
-
-```bash
-docker compose build
-```
-
-## Push
-
-```bash
-docker compose push
-```
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
