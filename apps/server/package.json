@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "@ashina/server",
+  "version": "0.1.0",
+  "description": "Ashina's Node.js server",
+  "keywords": [
+    "dashboard",
+    "self",
+    "host"
+  ],
+  "homepage": "https://github.com/aminnairi/ashina#readme",
+  "bugs": {
+    "url": "https://github.com/aminnairi/ashina/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminnairi/ashina.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Amin NAIRI",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest",
+    "dev": "tsx --watch index.ts",
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "@trpc/server": "^11.8.1",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6"
+  }
+}

@@ -1,0 +1,15 @@
+services:
+  ashina:
+    image: ghcr.io/aminnairi/ashina:0.1.0
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: production
+    tty: true
+    stdin_open: true
+    user: node
+    working_dir: /home/node
+    volumes:
+      - .:/home/node
+    ports:
+      - 8000:8000

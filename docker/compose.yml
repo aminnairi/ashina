@@ -1,0 +1,9 @@
+services:
+  ashina:
+    container_name: ashina
+    restart: always
+    image: ghcr.io/aminnairi/ashina:0.1.0
+    volumes:
+      - /home/ashina/database.sqlite:/home/node/database.sqlite
+    ports:
+      - 8000:8000
