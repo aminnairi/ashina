@@ -14,8 +14,7 @@ Clean and simple dashboard for your self-hosted apps
 ```bash
 mkdir ashina
 cd ashina
-curl -O https://github.com/aminnairi/ashina/tree/production/docker/compose.yml
-curl -O https://github.com/aminnairi/ashina/tree/production/docker/.env
+curl -O https://raw.githubusercontent.com/aminnairi/ashina/refs/heads/development/docker/compose.yml
 ```
 
 ### Start
